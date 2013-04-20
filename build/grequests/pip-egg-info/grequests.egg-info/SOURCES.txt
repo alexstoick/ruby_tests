@@ -1,0 +1,8 @@
+grequests.py
+setup.cfg
+pip-egg-info/grequests.egg-info/PKG-INFO
+pip-egg-info/grequests.egg-info/SOURCES.txt
+pip-egg-info/grequests.egg-info/dependency_links.txt
+pip-egg-info/grequests.egg-info/not-zip-safe
+pip-egg-info/grequests.egg-info/requires.txt
+pip-egg-info/grequests.egg-info/top_level.txt
