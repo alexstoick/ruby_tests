@@ -1,59 +1,25 @@
-require 'net/http'
-require 'json'
-
-th = []
-i = 0
-
-entries = []
-
-start = Time.now
-
-urls = [
-{ 'link' => 'http://maps.googleapis.com/maps/api/distancematrix/json?origins=44.419560%2C26.1266510&destinations=44.507402%2C26.090126&sensor=false'},
-{ 'link' => 'http://maps.googleapis.com/maps/api/distancematrix/json?origins=44.419560%2C26.1266510&destinations=44.41956%2C26.126651&sensor=false'},
-{ 'link' => 'http://maps.googleapis.com/maps/api/distancematrix/json?origins=44.419560%2C26.1266510&destinations=44.437716%2C26.069521&sensor=false'},
-{ 'link' => 'http://maps.googleapis.com/maps/api/distancematrix/json?origins=44.419560%2C26.1266510&destinations=44.4346%2C26.096752&sensor=false'},
-{ 'link' => 'http://maps.googleapis.com/maps/api/distancematrix/json?origins=44.419560%2C26.1266510&destinations=44.438216%2C26.114301&sensor=false'},
-{ 'link' => 'http://maps.googleapis.com/maps/api/distancematrix/json?origins=44.419560%2C26.1266510&destinations=44.409052%2C26.086395&sensor=false'},
-{ 'link' => 'http://maps.googleapis.com/maps/api/distancematrix/json?origins=44.419560%2C26.1266510&destinations=44.431445%2C26.053863&sensor=false'},
-{ 'link' => 'http://maps.googleapis.com/maps/api/distancematrix/json?origins=44.419560%2C26.1266510&destinations=44.441101%2C26.099904&sensor=false'},
-{ 'link' => 'http://maps.googleapis.com/maps/api/distancematrix/json?origins=44.419560%2C26.1266510&destinations=44.442391%2C26.099133&sensor=false'},
-{ 'link' => 'http://maps.googleapis.com/maps/api/distancematrix/json?origins=44.419560%2C26.1266510&destinations=44.442391%2C26.099133&sensor=false'},
-{ 'link' => 'http://maps.googleapis.com/maps/api/distancematrix/json?origins=44.419560%2C26.1266510&destinations=44.431445%2C26.053863&sensor=false'},
-{ 'link' => 'http://maps.googleapis.com/maps/api/distancematrix/json?origins=44.419560%2C26.1266510&destinations=44.431445%2C26.053863&sensor=false'},
-{ 'link' => 'http://maps.googleapis.com/maps/api/distancematrix/json?origins=44.419560%2C26.1266510&destinations=44.396106%2C26.123128&sensor=false'},
-{ 'link' => 'http://maps.googleapis.com/maps/api/distancematrix/json?origins=44.419560%2C26.1266510&destinations=44.507058%2C26.090893&sensor=false'},
-{ 'link' => 'http://maps.googleapis.com/maps/api/distancematrix/json?origins=44.419560%2C26.1266510&destinations=44.374388%2C26.119904&sensor=false'},
-{ 'link' => 'http://maps.googleapis.com/maps/api/distancematrix/json?origins=44.419560%2C26.1266510&destinations=44.434266%2C26.102266&sensor=false'},
-{ 'link' => 'http://maps.googleapis.com/maps/api/distancematrix/json?origins=44.419560%2C26.1266510&destinations=44.438216%2C26.114301&sensor=false'},
-{ 'link' => 'http://maps.googleapis.com/maps/api/distancematrix/json?origins=44.419560%2C26.1266510&destinations=44.444685%2C26.097327&sensor=false'},
-{ 'link' => 'http://maps.googleapis.com/maps/api/distancematrix/json?origins=44.419560%2C26.1266510&destinations=44.428742%2C26.15415&sensor=false'}
-]
-
-th = []
-i = 0
-urls.each do |u|
-	th[i] =Thread.new do
-		u['content'] = Net::HTTP.get( URI.parse(u['link']) )
-		parsed = JSON.parse ( u['content'] )
-
-		entry = {}
-
-		entry["distance"] = parsed['rows'][0]['elements'][0]['distance']['text']
-		entry["duration"] = parsed['rows'][0]['elements'][0]['duration']['value']
-		#puts entry
-		entries.push( entry )
-
-		if urls.all? {|u| u.has_key?("content") }
-			puts "Fetched all urls!"
-			fin = Time.now
-			puts (fin-start)
-		end
-	end
-	i=i+1
+def rad(x)
+	return x*Math::PI/180;
 end
 
-th.each { |t| t.join }
+def distHaversine (p1, p2)
+	r = 6371; # earth's mean radius in km
+	dLat  = rad(p2["lat"] - p1["lat"])
+	dLng = rad(p2["lng"] - p1["lng"])
 
-puts JSON.generate ( entries )
+	a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+	      Math.cos(rad(p1["lat"])) * Math.cos(rad(p2["lat"])) * Math.sin(dLng/2) * Math.sin(dLng/2)
+	c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a))
+	d = r * c;
 
+	return d.round(3)
+end
+
+p1 = {}
+p2 = {}
+p1["lat"] = 44.507402
+p1["lng"] = 26.090126
+p2["lat"] = 44.419560
+p2["lng"] = 26.1266510
+
+puts distHaversine(p1,p2)
