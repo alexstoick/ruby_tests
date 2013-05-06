@@ -1,0 +1,160 @@
+Failed to download *NSYNC - It's Gonna Be Me                ; after :   1 tries
+Failed to download 3 Doors Down - Changes                   ; after :   1 tries
+Failed to download AC/DC Tribute Band - You Shook Me All Night Long ; after :   0 tries
+Failed to download Aerosmith - Crazy                        ; after :   0 tries
+Failed to download Aiden - Elizabeth                        ; after :   0 tries
+Failed to download Al Kooper   Shuggie Otis - 12:15 Slow Goonbash Blues ; after :   0 tries
+Failed to download Alabama - Song of the South              ; after :   0 tries
+Failed to download Alan Jackson - Little Bitty              ; after :   0 tries
+Failed to download Alice In Chains - Down In a Hole         ; after :   9 tries
+Failed to download All Time Low - The Beach                 ; after :   1 tries
+Failed to download Allies - I'm Crying                      ; after :   0 tries
+Failed to download Amy Winehouse - Brother                  ; after :   1 tries
+Failed to download Andrew W.K. - She Is Beautiful           ; after :   0 tries
+Failed to download Animal Kingdom - Tin Man                 ; after :   0 tries
+Failed to download April Smith and the Great Picture Show - Terrible Things ; after :   0 tries
+Failed to download Audioslave - Out of Exile                ; after :   1 tries
+Failed to download Avicii - Fade Into Darkness (Vocal Radio Mix) ; after :   0 tries
+Failed to download Avril Lavigne - Here's to Never Growing Up ; after :   8 tries
+Failed to download B.o.B - Magic (feat. Rivers Cuomo)       ; after :  12 tries
+Failed to download Barry Manilow - Somewhere In the Night   ; after :   3 tries
+Failed to download Ben Harper   The Innocent Criminals - Steal My Kisses ; after :   0 tries
+Failed to download Billy Idol - Rebel Yell                  ; after :   6 tries
+Failed to download Billy Joel - The Longest Time            ; after :   6 tries
+Failed to download Bonnie Raitt - God Was In the Water      ; after :   0 tries
+Failed to download Bowling for Soup - I Ran (So Far Away)   ; after :   0 tries
+Failed to download Boys Like Girls - Five Minutes to Midnight ; after :   2 tries
+Failed to download Boys Like Girls - Hero/Heroine           ; after :   2 tries
+Failed to download Brad Paisley - A Man Don't Have to Die   ; after :   0 tries
+Failed to download Brad Paisley - The Nervous Breakdown     ; after :   0 tries
+Failed to download Brantley Gilbert - Country Must Be Country Wide ; after :   1 tries
+Failed to download Bruno Mars - Runaway Baby                ; after :   0 tries
+Failed to download Buckethead - Want Some Slaw?             ; after :   0 tries
+Failed to download Building 429 - Glory Defined             ; after :   0 tries
+Failed to download Canton Jones - My Walk                   ; after :   0 tries
+Failed to download Carmen Twillie   Lebo M - Circle of Life ; after :   0 tries
+Failed to download Chris Tomlin - I Will Follow             ; after :   8 tries
+Failed to download Chris Tomlin - White Flag                ; after :   0 tries
+Failed to download Christina Perri - Bang Bang Bang         ; after :   2 tries
+Failed to download Chronic Future - Stop Pretending         ; after :   0 tries
+Failed to download Coheed and Cambria - Junesong Provision (Acoustic Demo) ; after :   0 tries
+Failed to download Coheed and Cambria - Neverender          ; after :   0 tries
+Failed to download Coheed and Cambria - The Suffering       ; after :   0 tries
+Failed to download Dark Tranquility - 22 Acacia Avenue      ; after :   0 tries
+Failed to download Dashboard Confessional - Remember to Breathe ; after :   2 tries
+Failed to download Deep Island - Just Sex                   ; after :   0 tries
+Failed to download Deerhunter - Slow Swords                 ; after :   0 tries
+Failed to download Dido - See the Sun                       ; after :   0 tries
+Failed to download Dierks Bentley - What Was I Thinkin'     ; after :   3 tries
+Failed to download Dumdum Boys - Metallic hvit              ; after :   0 tries
+Failed to download Elvis Presley - Burning Love             ; after :   0 tries
+Failed to download Eminem - Stay Wide Awake                 ; after :   0 tries
+Failed to download Fireflight - You Decide                  ; after :   0 tries
+Failed to download Flow Child - Howl                        ; after :   0 tries
+Failed to download Frank Sinatra - Cheek To Cheek           ; after :   0 tries
+Failed to download Gaelic Storm - Heart of the Ocean        ; after :   0 tries
+Failed to download Gary Allan - Living in a House Full of Love ; after :   0 tries
+Failed to download Glassjaw - Mu Empire                     ; after :   0 tries
+Failed to download Glee Cast - One Love (People Get Ready)  ; after :   1 tries
+Failed to download Grateful Dead - Scarlet Begonias         ; after :   1 tries
+Failed to download Green Day - Misery                       ; after :   2 tries
+Failed to download Hall   Oates - You Make My Dreams        ; after :   0 tries
+Failed to download Handsome Boy Modeling School   Casual - It's Like That ; after :   0 tries
+Failed to download Hoobastank - The Reason                  ; after :   0 tries
+Failed to download In Flames - Episode 666                  ; after :   0 tries
+Failed to download In Flames - Suburban Me                  ; after :   0 tries
+Failed to download In Flames - Swim                         ; after :   0 tries
+Failed to download James Blunt - Tears and Rain             ; after :   1 tries
+Failed to download James Brown - I Got You (I Feel Good)    ; after :   4 tries
+Failed to download Jane's Addiction - Jane Says             ; after :   5 tries
+Failed to download Jason Aldean - Take a Little Ride        ; after :   0 tries
+Failed to download Jason Mraz - Living In the Moment        ; after :   6 tries
+Failed to download Joe Satriani - Summer Song               ; after :   4 tries
+Failed to download Kashmir - The Cynic                      ; after :   0 tries
+Failed to download Kenny Loggins - Forever                  ; after :   0 tries
+Failed to download Kenny Loggins - Heart to Heart           ; after :   1 tries
+Failed to download Lillix - What I Like About You           ; after :   0 tries
+Failed to download Little Big Town - Looking for a Reason   ; after :   0 tries
+Failed to download Mac Davis - It's Hard to Be Humble       ; after :   1 tries
+Failed to download Marcy Playground - Sex and Candy         ; after :   1 tries
+Failed to download Martha   The Muffins - Echo Beach        ; after :   0 tries
+Failed to download Matchbox Twenty - How Far We've Come     ; after :   5 tries
+Failed to download Matchbox Twenty - Push                   ; after :   0 tries
+Failed to download Matchbox Twenty - Unwell                 ; after :   0 tries
+Failed to download Matthew West - I Know You're There       ; after :   0 tries
+Failed to download Melee - You Make My Dreams               ; after :   0 tries
+Failed to download Miranda Lambert - Only Prettier          ; after :   0 tries
+Failed to download Mumford   Sons - Babel                   ; after :   6 tries
+Failed to download Muse - Apocalypse Please                 ; after :   6 tries
+Failed to download Muse - The Small Print                   ; after :   2 tries
+Failed to download Nelly - Air Force Ones                   ; after :   1 tries
+Failed to download Nickelback - Savin' Me                   ; after :   3 tries
+Failed to download Nirvana - Negative Creep                 ; after :   0 tries
+Failed to download Nirvana - Stay Away                      ; after :   1 tries
+Failed to download No Age - Glitter                         ; after :   0 tries
+Failed to download Oasis - Champagne Supernova              ; after :   4 tries
+Failed to download One Direction - She's Not Afraid         ; after :   2 tries
+Failed to download OneRepublic - Everybody Loves Me         ; after :   9 tries
+Failed to download Opeth - Closure                          ; after :   0 tries
+Failed to download Opeth - Ending Credits                   ; after :   0 tries
+Failed to download Owl City - The Bird and the Worm         ; after :   1 tries
+Failed to download Panic! At the Disco - New Perspective    ; after :   0 tries
+Failed to download Paolo Nutini - Chamber Music             ; after :   0 tries
+Failed to download Paolo Nutini - High Hopes                ; after :   0 tries
+Failed to download Paolo Nutini - Keep Rolling              ; after :   0 tries
+Failed to download Paolo Nutini - No Other Way              ; after :   0 tries
+Failed to download Paramore - Pressure                      ; after :   8 tries
+Failed to download Patty Smyth   Don Henley - Sometimes Love Just Ain't Enough ; after :   0 tries
+Failed to download Pearl Jam - Elderly Woman Behind the Counter In a Small Town ; after :   6 tries
+Failed to download Placebo - Song To Say Goodbye            ; after :   2 tries
+Failed to download Poets of the Fall - You're Still Here    ; after :   0 tries
+Failed to download Queen - Bicycle Race                     ; after :   0 tries
+Failed to download Queen - The Show Must Go On              ; after :   0 tries
+Failed to download Queen - We Will Rock You                 ; after :  10 tries
+Failed to download Rage Against the Machine - Bullet In the Head ; after :   3 tries
+Failed to download Rascal Flatts - These Days               ; after :   0 tries
+Failed to download Red Hot Chili Peppers - Under the Bridge ; after :   0 tries
+Failed to download Regina Spektor - That Time               ; after :   8 tries
+Failed to download Relient K - Sadie Hawkins Dance          ; after :   0 tries
+Failed to download Rihanna   Eminem - Love the Way You Lie, Pt. II ; after :   3 tries
+Failed to download Santana - Why Don't You   I              ; after :   2 tries
+Failed to download Secondhand Serenade - End                ; after :   0 tries
+Failed to download Shania Twain - Waiter! Bring Me Water!   ; after :   0 tries
+Failed to download Sleigh Bells - Tell 'Em                  ; after :   0 tries
+Failed to download Smash Mouth - I'm a Believer             ; after :   5 tries
+Failed to download Smashing Pumpkins - Today                ; after :   0 tries
+Failed to download Steve Miller Band - The Joker            ; after :   0 tries
+Failed to download Stevie Ray Vaughan   Double Trouble - Scratch-N-Sniff ; after :   1 tries
+Failed to download Sting - The Hounds of Winter             ; after :   0 tries
+Failed to download Story of the Year - Dive Right In        ; after :   1 tries
+Failed to download Swedish House Mafia - One (Your Name)    ; after :  30 tries
+Failed to download System of a Down - Sad Statue            ; after :   2 tries
+Failed to download Taking Back Sunday - You Know How I Do   ; after :   1 tries
+Failed to download Taylor Swift - Should've Said No         ; after :   5 tries
+Failed to download The Academy Is... - Crowded Room         ; after :   0 tries
+Failed to download The Afters - The Secret Parade           ; after :   0 tries
+Failed to download The Beatles - Come Together              ; after :   0 tries
+Failed to download The Cars - Drive                         ; after :   1 tries
+Failed to download The Commitments - Mr. Pitiful            ; after :   0 tries
+Failed to download The Commitments - Saved                  ; after :   0 tries
+Failed to download The Goo Goo Dolls - Long Way Down        ; after :   0 tries
+Failed to download The Jam - Thick as Thieves               ; after :   0 tries
+Failed to download The Kinks - You Really Got Me (Live)     ; after :   0 tries
+Failed to download The Police - Every Little Thing She Does Is Magic ; after :   1 tries
+Failed to download The Rolling Stones - You Can't Always Get What You Want ; after :   0 tries
+Failed to download The Temper Trap - Soldier On             ; after :   0 tries
+Failed to download The Used - My Pesticide                  ; after :   0 tries
+Failed to download The Weepies - Be My Thrill               ; after :   0 tries
+Failed to download The Wreckers - Leave The Pieces (Album Version) ; after :   0 tries
+Failed to download Third Day - Run to You                   ; after :   0 tries
+Failed to download Third Eye Blind - Deep Inside of You     ; after :   0 tries
+Failed to download Third Eye Blind - How's It Going to Be   ; after :   0 tries
+Failed to download Thursday - Understanding In a Car Crash  ; after :   0 tries
+Failed to download Toby Keith - American Soldier            ; after :   0 tries
+Failed to download tobyMac - Love Is in the House           ; after :   0 tries
+Failed to download Train - Calling All Angels               ; after :   4 tries
+Failed to download Trapt - Echo                             ; after :   1 tries
+Failed to download We the Kings - Check Yes, Juliet         ; after :   1 tries
+Failed to download White Denim - I Start to Run             ; after :   0 tries
+Failed to download William Fitzsimmons - Beautiful Girl     ; after :   0 tries
+Failed to download Willie Nelson - City of New Orleans      ; after :   0 tries
