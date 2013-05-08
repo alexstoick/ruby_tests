@@ -8,12 +8,13 @@ page = Nokogiri::HTML(open('shit.html'))
 
 json = []
 movies = page.css(".program_cinema_show")
-puts movies.length
+puts movies[0].css(".title_ro").text
 j = 0
 for k in 0..(movies.length-1) do
 	film = movies[k]
 	titluRo = film.css(".title_ro").text
 	titluEn = film.css("h2:first").text
+	puts titluEn
 	details = film.css(".info")[0]
 
 	nota = details.css("div")[0].text
@@ -25,57 +26,57 @@ for k in 0..(movies.length-1) do
 	actori = actori.gsub( /\s\s+/ , '' )
 	#regizor = regizor.gsub( /\s\s+/ , '' )
 
-	cinematografe = film.css(".mb5")
+	cinematografe = film.css(".program").css("div")
 
 	cinematografe.each do |cinematograf|
 		cinemaName = cinematograf.css(".theatre-link")[0].text
 
-		#buy_ticket_hour
-		#show_hour_price_info
-		# added = 0
-		# program = cinematograf.css(".buy_ticket_hour")
-		# program.each do |ora|
-		# 	ora = ora.text
-		# 	added += 1
-		# 	puts ora
+		#puts "program length" + cinematograf.css("div").length.to_s
+		length = cinematograf.css("div").length
+		puts k.to_s + " " + cinemaName + " " + length.to_s
+		case length
+			when 0
+				next
+			when 1
+				program = cinematograf.css("div")[0].text
+			when 2
+				program = cinematograf.css("div")[1].text
+		end
+		# if cinematograf.css("div").length == 0
+		# 	next
+		# 	# program = cinematograf.parent.css("div")[0].text
+		# 	#
+		# 	# puts "prg1 " #+ program.length.to_s
+		# else
+		# 	program = cinematograf.css("div")[1].text
+		# 	puts k.to_s + " " + cinemaName
+		# 	puts "prg2 " + program.length.to_s
 		# end
 
-		# program = cinematograf.css(".show_hour_price_info")
-		# program.each do |ora|
-		# 	ora = ora.text
-		# 	added += 1
-		# 	puts ora
-		# end
-		# if ( added = 0 )
-		# 	program = film.css(".show_hour_price_info")
-		# end
-		# program.each do |ora|
-		# 	ora = ora.text
-		# 	added += 1
-		# 	puts ora
-		# end
-		# puts k.to_s + " " + cinemaName + " " + program.length.to_s
 
-		# program = cinematograf.css("div")[0].text
-		# puts k.to_s + " entered"
-		# program = program.gsub(/[^0-9:]/i, '')
-		# length = (program.length)/5
-		# for i in 0..length do
-		# 	ora = program[i*5 , 5 ]
-		# 	j = j + 1
-		# 	intrare = {}
-		# 	intrare [ "id" ] = j
-		# 	intrare [ "titluEn" ] = titluEn
-		# 	intrare [ "titluRo" ] = titluRo
-		# 	intrare [ "cinema" ] = cinemaName
-		# 	intrare [ "ora" ] = ora ;
-		# 	intrare [ "nota" ] = nota ;
-		# 	intrare [ "gen" ] = gen ;
-		# 	intrare [ "actori" ] = actori ;
-		# 	#intrare [ "regizor" ] = regizor ;
-		# 	json.push ( intrare )
-		# end
+
+		#puts program
+		program = program.gsub(/[^0-9:]/, '')
+		length = (program.length)/5
+		#puts program
+		for i in 0..length do
+			ora = program[i*5 , 5 ]
+			puts ora
+			j = j + 1
+			intrare = {}
+			intrare [ "id" ] = j
+			intrare [ "titluEn" ] = titluEn
+			intrare [ "titluRo" ] = titluRo
+			intrare [ "cinema" ] = cinemaName
+			intrare [ "ora" ] = ora ;
+			intrare [ "nota" ] = nota ;
+			intrare [ "gen" ] = gen ;
+			intrare [ "actori" ] = actori ;
+			#intrare [ "regizor" ] = regizor ;
+			json.push ( intrare )
+		end
 	end
+	exit()
 end
 
 
