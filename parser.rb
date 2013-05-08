@@ -8,59 +8,44 @@ page = Nokogiri::HTML(open('http://www.cinemagia.ro/program-cinema/bucuresti/'))
 
 json = []
 movies = page.css(".program_cinema_show")
-puts movies[0].css(".title_ro").text
 j = 0
 for k in 0..(movies.length-1) do
 	film = movies[k]
 	titluRo = film.css(".title_ro").text
 	titluEn = film.css("h2:first").text
-	puts titluEn
 	details = film.css(".info")[0]
+
+	if ( details.css("div").length < 4 )
+		next
+	end
 
 	nota = details.css("div")[0].text
 	gen = details.css("div")[1].text
 	actori = details.css("div")[2].text
-	#regizor = details.css("div")[3].text
+	regizor = details.css("div")[3].text
 
 	gen = gen.gsub( /\s\s+/ , '' )
 	actori = actori.gsub( /\s\s+/ , '' )
-	#regizor = regizor.gsub( /\s\s+/ , '' )
+	regizor = regizor.gsub( /\s\s+/ , '' )
 
 	cinematografe = film.css(".theatre-link")#.css("div")
 
 	cinematografe.each do |cinematograf|
 		cinemaName = cinematograf.text
-
-		#puts "program length" + cinematograf.css("div").length.to_s
 		length = cinematograf.parent.css("div").length
 		length1 = cinematograf.parent.parent.css("div").length
-		puts k.to_s + " " + cinemaName + " " + length.to_s + " " + length1.to_s
 		case length
 			when 0
 				program = cinematograf.parent.parent.css("div")[1].text
 			when 1
 				program = cinematograf.parent.css("div")[0].text
 		end
-		# if cinematograf.css("div").length == 0
-		# 	next
-		# 	# program = cinematograf.parent.css("div")[0].text
-		# 	#
-		# 	# puts "prg1 " #+ program.length.to_s
-		# else
-		# 	program = cinematograf.css("div")[1].text
-		# 	puts k.to_s + " " + cinemaName
-		# 	puts "prg2 " + program.length.to_s
-		# end
 
-
-
-		#puts program
 		program = program.gsub(/[^0-9:]/, '')
 		length = (program.length)/5
-		#puts program
+
 		for i in 0..length do
 			ora = program[i*5 , 5 ]
-			puts ora
 			j = j + 1
 			intrare = {}
 			intrare [ "id" ] = j
@@ -71,7 +56,7 @@ for k in 0..(movies.length-1) do
 			intrare [ "nota" ] = nota ;
 			intrare [ "gen" ] = gen ;
 			intrare [ "actori" ] = actori ;
-			#intrare [ "regizor" ] = regizor ;
+			intrare [ "regizor" ] = regizor ;
 			json.push ( intrare )
 		end
 	end
