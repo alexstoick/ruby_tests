@@ -2,7 +2,7 @@
 require 'nokogiri'
 require 'open-uri'
 
-link = "http://jog.fm/workout-songs/for/5:15/minute-kilometers?page="
+link = "http://jog.fm/workout-songs?page="
 
 list = []
 
