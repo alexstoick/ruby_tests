@@ -3,8 +3,8 @@ require 'nokogiri'
 require 'open-uri'
 require 'json'
 
-#page = Nokogiri::HTML(open('http://www.cinemagia.ro/program-cinema/bucuresti/'))
-page = Nokogiri::HTML(open('shit.html'))
+page = Nokogiri::HTML(open('http://www.cinemagia.ro/program-cinema/bucuresti/'))
+#page = Nokogiri::HTML(open('shit.html'))
 
 json = []
 movies = page.css(".program_cinema_show")
@@ -26,21 +26,20 @@ for k in 0..(movies.length-1) do
 	actori = actori.gsub( /\s\s+/ , '' )
 	#regizor = regizor.gsub( /\s\s+/ , '' )
 
-	cinematografe = film.css(".program").css("div")
+	cinematografe = film.css(".theatre-link")#.css("div")
 
 	cinematografe.each do |cinematograf|
-		cinemaName = cinematograf.css(".theatre-link")[0].text
+		cinemaName = cinematograf.text
 
 		#puts "program length" + cinematograf.css("div").length.to_s
-		length = cinematograf.css("div").length
-		puts k.to_s + " " + cinemaName + " " + length.to_s
+		length = cinematograf.parent.css("div").length
+		length1 = cinematograf.parent.parent.css("div").length
+		puts k.to_s + " " + cinemaName + " " + length.to_s + " " + length1.to_s
 		case length
 			when 0
-				next
+				program = cinematograf.parent.parent.css("div")[1].text
 			when 1
-				program = cinematograf.css("div")[0].text
-			when 2
-				program = cinematograf.css("div")[1].text
+				program = cinematograf.parent.css("div")[0].text
 		end
 		# if cinematograf.css("div").length == 0
 		# 	next
@@ -76,7 +75,6 @@ for k in 0..(movies.length-1) do
 			json.push ( intrare )
 		end
 	end
-	exit()
 end
 
 
