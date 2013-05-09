@@ -4,6 +4,7 @@ require 'open-uri'
 require 'json'
 
 page = Nokogiri::HTML(open('http://www.cinemagia.ro/program-cinema/bucuresti/'))
+#page = Nokogiri::HTML( "<img src='333.htmlqq' />")
 #page = Nokogiri::HTML(open('shit.html'))
 
 json = []
@@ -11,6 +12,8 @@ movies = page.css(".program_cinema_show")
 j = 0
 for k in 0..(movies.length-1) do
 	film = movies[k]
+
+	img = film.css("img")[0]["src"]
 	titluRo = film.css(".title_ro").text
 	titluEn = film.css("h2:first").text
 	details = film.css(".info")[0]
@@ -49,6 +52,7 @@ for k in 0..(movies.length-1) do
 			j = j + 1
 			intrare = {}
 			intrare [ "id" ] = j
+			intrare [ "image"] = img
 			intrare [ "titluEn" ] = titluEn
 			intrare [ "titluRo" ] = titluRo
 			intrare [ "cinema" ] = cinemaName
