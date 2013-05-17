@@ -6,7 +6,7 @@ link = "http://jog.fm/workout-songs?page="
 
 list = []
 
-for i in 1..8 do
+for i in 1..2 do
 
 
 	page = Nokogiri::HTML(open(link+ i.to_s))

@@ -8,6 +8,7 @@ page = Nokogiri::HTML(open('http://www.cinemagia.ro/program-cinema/bucuresti/'))
 #page = Nokogiri::HTML(open('shit.html'))
 
 json = []
+cinemas = []
 movies = page.css(".program_cinema_show")
 j = 0
 for k in 0..(movies.length-1) do
@@ -35,6 +36,8 @@ for k in 0..(movies.length-1) do
 
 	cinematografe.each do |cinematograf|
 		cinemaName = cinematograf.text
+		cinemaName = cinemaName.gsub(/[^0-9a-zA-Z :]/, '' )
+		cinemas.push ( cinemaName )
 		length = cinematograf.parent.css("div").length
 		length1 = cinematograf.parent.parent.css("div").length
 		case length
@@ -65,6 +68,8 @@ for k in 0..(movies.length-1) do
 		end
 	end
 end
+
+File.open( 'place1.json', 'w' ) { |file| file.write( cinemas ) }
 
 
 completeJSON = {}
