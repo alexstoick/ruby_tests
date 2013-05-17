@@ -7,7 +7,7 @@ th = []
 i=0
 contor = 0
 completed = 0
-File.open('music.json').each do |line|
+File.open('output').each do |line|
 	th[i] = Thread.new do
 		line = line.gsub( /\n/ , '')
 		original_line = line
