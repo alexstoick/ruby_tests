@@ -6,18 +6,11 @@ cond = ARGV[0]
 
 if ( cond == "1")
 	link = "http://cinemadistance.eu01.aws.af.cm/movies/"
+	link = "http://localhost:3000/movies"
 	th = []
 	urls=[]
 	for i in 1..45 do
 		urls[i-1] = link + i.to_s + "/aparitii"
-		# th[i-1] =Thread.new do
-		# 	current_i = i
-		# 	start = Time.now
-		# 	link_current = link + current_i.to_s + "/aparitii"
-		# 	content = Net::HTTP.get( URI.parse( link + i.to_s + "/aparitii") )
-		# 	fin = Time.now
-		# 	puts "For " + link_current.to_s + " duration: " + (fin-start).to_s
-		# end
 	end
 	i=0
 	completed = 0
