@@ -1,5 +1,0 @@
-{"server"=>"nginx", "date"=>"Tue, 16 Jul 2013 08:01:36 GMT", "content-type"=>"text/xml", "content-length"=>"19002", "last-modified"=>"Tue, 16 Jul 2013 07:57:38 GMT", "connection"=>"keep-alive", "etag"=>"\"51e4fcf2-4a3a\"", "content-control"=>"private, max-age=0, must-revalidate", "p3p"=>"CP=\"CAO DSP COR CURa ADMa DEVa PSAa PSDa CONi OUR IND PHY ONL UNI COM NAV INT CNT STA\"", "accept-ranges"=>"bytes"}
-"51e4fcf2-4a3a"
-200
-10
-Duration: 1.261939
